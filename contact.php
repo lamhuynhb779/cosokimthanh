@@ -58,7 +58,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!----top-header---->
 			<div class="top-header">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" title="barndlogo" /></a>
+					<a href="index.php"><img src="images/logo.png" title="barndlogo" /></a>
 				</div>
 				<div class="top-header-info">
 					<div class="top-contact-info">
@@ -185,7 +185,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="footer">
 				<div class="container">
 					<div class="col-md-3 footer-logo">
-						<a href="index.html"><img src="images/flogo.png" title="brand-logo" /></a>
+						<a href="index.php"><img src="images/flogo.png" title="brand-logo" /></a>
 					</div>
 					<div class="col-md-7 footer-links">
 						<ul class="unstyled-list list-inline">
