@@ -6,59 +6,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Brnd-logo Website Template | Details :: w3layouts</title>
-		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="js/jquery.min.js"></script>
-		 <!-- Custom Theme files -->
-		<link href="css/style.css" rel='stylesheet' type='text/css' />
-   		 <!-- Custom Theme files -->
-   		 <!---- start-smoth-scrolling---->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-		 <!---- start-smoth-scrolling---->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-		</script>
-		<!----webfonts--->
-		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
-		<!---//webfonts--->
-		<!----start-top-nav-script---->
-		<script>
-			$(function() {
-				var pull 		= $('#pull');
-					menu 		= $('nav ul');
-					menuHeight	= menu.height();
-				$(pull).on('click', function(e) {
-					e.preventDefault();
-					menu.slideToggle();
-				});
-				$(window).resize(function(){
-	        		var w = $(window).width();
-	        		if(w > 320 && menu.is(':hidden')) {
-	        			menu.removeAttr('style');
-	        		}
-	    		});
-			});
-		</script>
-		<!----//End-top-nav-script---->
-	</head>
+	<?php include('head.php'); ?>
 	<body>
 		<!----container---->
 		<div class="container">
 			<!----top-header---->
 			<div class="top-header">
 				<div class="logo">
-					<a href="index.html"><img src="images/logo.png" title="barndlogo" /></a>
+					<a href="index.php"><img src="images/logo.png" title="barndlogo" /></a>
 				</div>
 				<div class="top-header-info">
 					<div class="top-contact-info">
@@ -94,17 +49,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!---top-header-nav---->
 			<div class="top-header-nav"> 
 			<!----start-top-nav---->
-			 <nav class="top-nav main-menu">
-					<ul class="top-nav">
-						<li><a href="products.html">PRODUCTS </a><span> </span></li>
-						<li><a href="products.html">CAMPAINGS</a><span> </span></li>
-						<li><a href="products.html">SERVICES</a><span> </span></li>
-						<li><a href="products.html">BRANDS</a><span> </span></li>
-						<li><a href="products.html">ABOUT US</a></li>
-						<div class="clearfix"> </div>
-					</ul>
-					<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
-			  </nav>
+			<?php include('blocks/nav.php'); ?>
 			  <!----End-top-nav---->
 			  <!---top-header-search-box--->
 			  <div class="top-header-search-box">
@@ -123,92 +68,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="container">
 				<!--- products ---->
 				<div class="products">
-					<div class="product-filter">
-						<h1><a href="#">FILTER</a></h1>
-						<div class="product-filter-grids"> 
-							<div class="col-md-3 product-filter-grid1-brands">
-								<h3>BRANDS</h3>
-								<ul class="col-md-6 unstyled-list b-list1">
-									<li><a href="#">adidas</a></li>
-									<li><a href="#">nike</a></li>
-									<li><a href="#">camper</a></li>
-									<li><a href="#">superga</a></li>
-									<li><a href="#">timberland</a></li>
-									<li><a href="#">new balance</a></li>
-									<li><a href="#">converse</a></li>
-									<li><a href="#">puma</a></li>
-									<li><a href="#">kinetix</a></li>
-									<div class="clearfix"> </div>
-								</ul>
-								<ul class="col-md-6 unstyled-list b-list2">
-									<li><a href="#">tiger</a></li>
-									<li><a href="#">lacoste</a></li>
-									<li><a href="#">eebok</a></li>
-									<li><a href="#">cat</a></li>
-									<li><a href="#">dockers</a></li>
-									<div class="clearfix"> </div>
-								</ul>
-								<div class="clearfix"> </div>
-							</div>
-							<!---->
-							<div class="col-md-6 product-filter-grid1-brands-col2">
-									<div class="producst-cate-grids">
-										<div class="col-md-4 producst-cate-grid text-center">
-											<h2>WOMAN</h2>
-											<img class="r-img text-center img-responsive" src="images/img-w.jpg" title="name">
-											<span><img src="images/objs1.png" title="name"></span>
-											<h4>TOTAL</h4>
-											<label>357 PRODUCTS</label>
-											<a class="r-list-w" href="#"><img src="images/list-icon.png" title="list"></a>
-										</div>
-										<div class="col-md-4 producst-cate-grid text-center">
-											<h2>MAN</h2>
-											<img class="r-img text-center img-responsive" src="images/man-r-img.jpg" title="name">
-											<span><img src="images/objs2.png" title="name"></span>
-											<h4>TOTAL</h4>
-											<label>357 PRODUCTS</label>
-											<a class="r-list-w" href="#"><img src="images/list-icon.png" title="list"></a>
-										</div>
-										<div class="col-md-4 producst-cate-grid text-center">
-											<h2>KIDS</h2>
-											<img class="r-img text-center img-responsive" src="images/kid-r-img.jpg" title="name">
-											<span><img src="images/objs3.png" title="name"></span>
-											<h4>TOTAL</h4>
-											<label>357 PRODUCTS</label>
-											<a class="r-list-w" href="#"><img src="images/list-icon.png" title="list"></a>
-										</div>
-									</div>
-							</div>
-							<!---->
-							<div class="product-filter-grid1-brands-col3">
-								<div class="products-colors">
-									<h3>SELECT COLOR </h3>
-									<li><a href="#"><span class="color1"> </span></a></li>
-									<li><a href="#"><span class="color2"> </span></a></li>
-									<li><a href="#"><span class="color3"> </span></a></li>
-									<li><a href="#"><span class="color4"> </span></a></li>
-									<li><a href="#"><span class="color5"> </span></a></li>
-									<li><a href="#"><span class="color6"> </span></a></li>
-									<li><a href="#"><span class="color7"> </span></a></li>
-									<li><a href="#"><span class="color8"> </span></a></li>
-									<li><a href="#"><span class="color9"> </span></a></li>
-									<li><a href="#"><span class="color10"> </span></a></li>
-									<li><a href="#"><span class="color11"> </span></a></li>
-									<li><a href="#"><span class="color12"> </span></a></li>
-									<li><a href="#"><span class="color13"> </span></a></li>
-									<li><a href="#"><span class="color14"> </span></a></li>
-									<li><a href="#"><span class="color15"> </span></a></li>
-									<li><a href="#"><span class="color16"> </span></a></li>
-									<li><a href="#"><span class="color17"> </span></a></li>
-									<li><a href="#"><span class="color18"> </span></a></li>
-									<li><a href="#"><span class="color19"> </span></a></li>
-									<li><a href="#"><span class="color20"> </span></a></li>
-									<div class="clearfix"> </div>
-								</div>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-					</div>
+					<!-- filter -->
 				</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -285,68 +145,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							</div>
 						</div>
 					</div>
-					<div class="col-md-8 product-details-row1-col2">
-						<div class="product-rating">
-							<a class="rate" href="#"><span> </span></a>
-							<label><a href="#">Read <b>8</b> Reviews</a></label>
-						</div>
-						<div class="product-price">
-							<div class="product-price-left text-right">
-								<span>174.00</span>
-								<h5>109.00$</h5>
-							</div>
-							<div class="product-price-right">
-								<a href="#"><span> </span></a>
-								<label> save <b>40%</b></label>
-							</div>
-							<div class="clearfix"> </div>
-						</div>
-						<div class="product-price-details">
-							<p class="text-right">This is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,e </p>
-							<a class="shipping" href="#"><span> </span>Free shipping</a>
-							<div class="clearfix"> </div>
-							<div class="product-size-qty">
-								<div class="pro-size"> 
-									<span>Size:</span>
-									<select>
-										<option>7</option>
-										<option>8</option>
-										<option>9</option>
-										<option>10</option>
-										<option>11</option>
-									</select>
-								</div>
-								<div class="pro-qty">
-									<span>Qty:</span>
-									<select>
-										<option>1</option>
-										<option>2</option>
-										<option>3</option>
-										<option>4</option>
-										<option>5</option>
-									</select>
-								</div> 
-								<div class="clearfix"> </div>
-							</div>
-							<div class="clearfix"> </div>
-							<div class="product-cart-share">
-								<div class="add-cart-btn">
-									<input type="button" value="Add to cart" />
-								</div>
-								<ul class="product-share text-right">
-									<h3>Share This:</h3>
-									<ul>
-										<li><a class="share-face" href="#"><span> </span> </a></li>
-										<li><a class="share-twitter" href="#"><span> </span> </a></li>
-										<li><a class="share-google" href="#"><span> </span> </a></li>
-										<li><a class="share-rss" href="#"><span> </span> </a></li>
-										<div class="clear"> </div>
-									</ul>
-								</ul>
-							</div>
-						</div>
-					</div>
-						<div class="clearfix"> </div>
+					<!-- product info start-->
+					<?php include('blocks/product-info.php'); ?>
+					<!-- product info end -->
 				<!--//product-details--->
 				</div>
 				<!---- product-details ---->
@@ -446,7 +247,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="footer">
 				<div class="container">
 					<div class="col-md-3 footer-logo">
-						<a href="index.html"><img src="images/flogo.png" title="brand-logo" /></a>
+						<a href="index.php"><img src="images/flogo.png" title="brand-logo" /></a>
 					</div>
 					<div class="col-md-7 footer-links">
 						<ul class="unstyled-list list-inline">
